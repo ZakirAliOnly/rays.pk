@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rays Marketing Network – We Believe in Quality Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <img src="images/ray-logo.png" alt="Rays" onerror="this.style.display='none'">
+    <div class="nav-logo-text"></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#deals">Products</a></li>
+    <li><a href="#clients">Clients</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+  </ul>
+  <a href="https://wa.me/923003832165" target="_blank" class="nav-cta">💬 Get a Quote</a>
+  <div class="hamburger" id="ham" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mnu">
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#services" onclick="closeNav()">Services</a>
+  <a href="#deals" onclick="closeNav()">Products</a>
+  <a href="#clients" onclick="closeNav()">Clients</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+  <a href="https://wa.me/923003832165" target="_blank">💬 WhatsApp Us</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-ring"></div>
+  <div class="hero-beams">
+    <div class="beam" style="left:58%;transform:rotate(-28deg);"></div>
+    <div class="beam" style="left:65%;transform:rotate(-22deg);opacity:.5;"></div>
+    <div class="beam" style="left:72%;transform:rotate(-18deg);opacity:.3;"></div>
+  </div>
+
+  <div class="float-pills">
+    <div class="float-pill">🏛️ Government Contractor</div>
+    <div class="float-pill">🖨️ Digital Printing</div>
+    <div class="float-pill">📣 Branding & Ads</div>
+    <div class="float-pill">🏫 School Supplies</div>
+    <div class="float-pill">💻 IT Equipment</div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span> Trusted Since 2010 – Quetta, Pakistan</div>
+
+    <h1 class="hero-title">
+      <span class="t-orange">We Believe</span>
+      <span class="t-yellow">in Quality</span>
+      <span class="t-white">Services</span>
+    </h1>
+
+    <div class="float-pills-mobile">
+      <div class="float-pill">🏛️ Government Contractor</div>
+      <div class="float-pill">🖨️ Digital Printing</div>
+      <div class="float-pill">📣 Branding & Ads</div>
+      <div class="float-pill">🏫 School Supplies</div>
+      <div class="float-pill">💻 IT Equipment</div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#services" class="btn-main">✦ Explore Services</a>
+      <a href="https://wa.me/923003832165?text=Hello%20Rays%20Marketing%2C%20I%20need%20a%20quote." target="_blank" class="btn-green">
+        <svg viewBox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.773L0 32l8.473-2.004A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.293 22.293c-.344.967-2.003 1.872-2.746 1.993-.716.117-1.608.166-2.597-.163a23.85 23.85 0 01-2.354-.87C12.47 21.573 9.94 18.19 9.75 17.946c-.188-.244-1.53-2.032-1.53-3.877s.969-2.75 1.313-3.125c.344-.375.75-.469.999-.469.25 0 .5.002.72.014.23.012.54-.088.844.644.313.75 1.063 2.594 1.157 2.782.094.188.156.406.031.656-.125.25-.188.406-.375.625-.188.22-.395.49-.563.657-.188.188-.383.39-.165.766.22.375.975 1.605 2.094 2.6 1.438 1.28 2.65 1.676 3.025 1.864.375.188.594.156.813-.094.22-.25.937-1.094 1.188-1.469.25-.375.5-.313.844-.188.344.125 2.188 1.031 2.563 1.219.375.188.625.281.719.438.093.156.093.906-.25 1.873z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-num" data-target="15">0+</span><span class="hstat-lbl">Years in Business</span></div>
+      <div class="hstat"><span class="hstat-num" data-target="100">0+</span><span class="hstat-lbl">Happy Clients</span></div>
+      <div class="hstat"><span class="hstat-num" data-target="50">0+</span><span class="hstat-lbl">Product Categories</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><div class="scroll-mouse"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Government Contractor</span>
+    <span class="marquee-item">Digital Printing</span>
+    <span class="marquee-item">School Supplies</span>
+    <span class="marquee-item">Branding & Advertisement</span>
+    <span class="marquee-item">IT Equipment</span>
+    <span class="marquee-item">CCTV Cameras</span>
+    <span class="marquee-item">Smart Boards</span>
+    <span class="marquee-item">Office Stationery</span>
+    <span class="marquee-item">Panaflex Printing</span>
+    <span class="marquee-item">ID Cards</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item">Government Contractor</span>
+    <span class="marquee-item">Digital Printing</span>
+    <span class="marquee-item">School Supplies</span>
+    <span class="marquee-item">Branding & Advertisement</span>
+    <span class="marquee-item">IT Equipment</span>
+    <span class="marquee-item">CCTV Cameras</span>
+    <span class="marquee-item">Smart Boards</span>
+    <span class="marquee-item">Office Stationery</span>
+    <span class="marquee-item">Panaflex Printing</span>
+    <span class="marquee-item">ID Cards</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-vis reveal-l">
+    <div class="about-vis-inner">
+      <img src="images/ray-logo.png" alt="Rays Marketing Network" onerror="this.style.display='none'">
+      <p style="margin-top:1.1rem;font-weight:800;color:#999;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;">Rays Marketing Network</p>
+      <div class="chips">
+        <span class="chip">Govt. Registered</span>
+        <span class="chip">NTN Verified</span>
+        <span class="chip">AGPR Vendor</span>
+        <span class="chip">Est. 2010</span>
+      </div>
+    </div>
+  </div>
+  <div class="reveal-r">
+    <div class="eyebrow">About Us</div>
+    <h2 class="stitle">Your Trusted <span>Marketing &amp; Supply</span> Partner</h2>
+    <p class="ssub">Since 2010, Rays Marketing Network has delivered quality-first solutions to government institutions, schools, and private offices across Quetta and beyond.</p>
+    <div class="mv-grid">
+      <div class="mv-card"><h4>🎯 Our Mission</h4><p>To provide the best unsurpassed service to clients at their doorsteps through effective and efficient team members of our network.</p></div>
+      <div class="mv-card"><h4>🌟 Our Vision</h4><p>To accommodate our loyal clients in reaching their ultimate milestones through innovative quality solutions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="divider" style="background:#fff;">
+  <svg viewBox="0 0 1440 55" preserveAspectRatio="none" height="55" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L1440,55 L1440,55 L0,55 Z" fill="#080300"/>
+  </svg>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="eyebrow">What We Do</div>
+  <h2 class="stitle" style="color:#fff;">Core <span>Services</span></h2>
+  <div class="svc-grid">
+    <div class="svc-card reveal"><div class="svc-icon">🏛️</div><h3>Government Contracting</h3><p>Registered contractor &amp; general order supplier for public sector institutions with full documentation.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.08s"><div class="svc-icon">🖨️</div><h3>Digital &amp; Offset Printing</h3><p>High-quality digital and offset printing — brochures, banners, panaflex, ID cards and more.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.16s"><div class="svc-icon">📣</div><h3>Branding &amp; Advertisement</h3><p>Complete branding: standees, publicity materials, promotion videos, and organization profiles.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.24s"><div class="svc-icon">🏫</div><h3>Schools Working</h3><p>All school stationery: fee books, result cards, attendance registers, merit certificates, prospectus.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.32s"><div class="svc-icon">💻</div><h3>IT &amp; Tech Equipment</h3><p>Computers, laptops, CCTV cameras, smart boards, and software solutions tailored to client needs.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.40s"><div class="svc-icon">🛒</div><h3>General Order Supply</h3><p>Stationery, furniture, cleaning items, toners, photocopiers, uniforms — all on demand.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.48s"><div class="svc-icon">🎁</div><h3>Souvenir &amp; Gifting</h3><p>Customized mugs, awards, appreciation certificates, branded merchandise on demand.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.56s"><div class="svc-icon">🪑</div><h3>Furniture Repairing</h3><p>All kinds of office and institutional furniture repairing at competitive rates.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.64s"><div class="svc-icon">🌐</div><h3>Online Sales &amp; Services</h3><p>Shop and order our products online — fast, convenient, and delivered to your doorstep across Pakistan.</p></div>
+    <div class="svc-card reveal" style="transition-delay:.72s"><div class="svc-icon">📦</div><h3>Customize Order</h3><p>Fully customized orders tailored to your exact requirements — any quantity, any design, any product.</p></div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="divider" style="background:#080300;">
+  <svg viewBox="0 0 1440 55" preserveAspectRatio="none" height="55" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,55 L1440,0 L1440,55 Z" fill="#FFF8EC"/>
+  </svg>
+</div>
+
+<!-- DEALS -->
+<section class="deals" id="deals">
+  <div class="eyebrow reveal">Our Deals</div>
+  <h2 class="stitle reveal">Product <span>Catalogue</span></h2>
+  <p class="ssub reveal">Browse our full range — available on order for schools, offices, and government institutions.</p>
+  <div class="tab-row reveal">
+    <button class="tab-btn active" onclick="filterDeals('school',this)">📚 School</button>
+    <button class="tab-btn" onclick="filterDeals('office',this)">🗂️ Office</button>
+    <button class="tab-btn" onclick="filterDeals('print',this)">🖨️ Print &amp; Brand</button>
+    <button class="tab-btn" onclick="filterDeals('all',this)">🔍 All</button>
+  </div>
+  <div class="deals-grid" id="deals-grid"></div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients" id="clients">
+  <div class="clients-header reveal">
+    <div class="eyebrow">Our Clients</div>
+    <h2 class="stitle">Trusted by <span>Industry Experts</span></h2>
+    <p class="ssub">From government departments to schools and private enterprises — our clients trust us for quality and reliability.</p>
+  </div>
+  <div class="clients-scroll-wrapper">
+    <div class="clients-track-outer">
+      <div class="clients-track" id="clients-track"></div>
+    </div>
+  </div>
+  <div class="clients-stats reveal">
+    <div class="cstat"><span class="cstat-num">100+</span><span class="cstat-lbl">Total Clients</span></div>
+    <div class="cstat"><span class="cstat-num">15+</span><span class="cstat-lbl">Govt. Departments</span></div>
+    <div class="cstat"><span class="cstat-num">80+</span><span class="cstat-lbl">Schools Served</span></div>
+    <div class="cstat"><span class="cstat-num">98%</span><span class="cstat-lbl">Satisfaction Rate</span></div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners" id="partners">
+  <div class="clients-header reveal">
+    <div class="eyebrow">Our Partners</div>
+    <h2 class="stitle">Trusted <span>Partners</span></h2>
+    <p class="ssub">We collaborate with leading brands and suppliers to deliver the best quality products and services.</p>
+  </div>
+  <div class="clients-scroll-wrapper partners-scroll-wrapper">
+    <div class="clients-track-outer">
+      <div class="clients-track" id="partners-track"></div>
+    </div>
+  </div>
+  <div class="clients-stats reveal">
+    <div class="cstat"><span class="cstat-num">50+</span><span class="cstat-lbl">Brand Partners</span></div>
+    <div class="cstat"><span class="cstat-num">15+</span><span class="cstat-lbl">Years Together</span></div>
+    <div class="cstat"><span class="cstat-num">100%</span><span class="cstat-lbl">Quality Assured</span></div>
+    <div class="cstat"><span class="cstat-num">PK</span><span class="cstat-lbl">Nationwide Supply</span></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section class="certificates" id="certificates">
+  <div class="clients-header reveal">
+    <div class="eyebrow">Our Certificates</div>
+    <h2 class="stitle">Verified &amp; <span>Certified</span></h2>
+    <p class="ssub">Officially registered and certified by government bodies — your assurance of trust and quality.</p>
+  </div>
+  <div class="clients-scroll-wrapper cert-scroll-wrapper">
+    <div class="clients-track-outer">
+      <div class="clients-track" id="cert-track"></div>
+    </div>
+  </div>
+  <div class="clients-stats reveal">
+    <div class="cstat"><span class="cstat-num">NTN</span><span class="cstat-lbl">4182785-6</span></div>
+    <div class="cstat"><span class="cstat-num">STRN</span><span class="cstat-lbl">3277876113969</span></div>
+    <div class="cstat"><span class="cstat-num">AGPR</span><span class="cstat-lbl">Vendor 30141496</span></div>
+    <div class="cstat"><span class="cstat-num">Est.</span><span class="cstat-lbl">Since 2010</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div>
+    <div class="eyebrow" style="background:rgba(255,255,255,0.25);color:#fff;">Get In Touch</div>
+    <h2 class="stitle">Let's Work <span>Together</span></h2>
+    <p class="ssub">Whether a single product or full institutional supply — we're just a message away.</p>
+    <div class="cinfo">
+      <div class="cinfo-row">
+        <div class="cinfo-icon">📍</div>
+        <div><h4>Office Address</h4><p>11 Ground Floor, Lala Jee Business Center,<br>Archer Road, Quetta</p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon">📞</div>
+        <div><h4>Phone / WhatsApp</h4><p><a href="https://wa.me/923003832165">+92 300 3832165 (Zaheer)</a></p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><img src="images/gmail.png" alt="Gmail" class="social-icon-img"></div>
+        <div><h4>Email</h4><p><a href="mailto:info@rays.pk">info@rays.pk</a></p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><img src="images/instagram.png" alt="Instagram" class="social-icon-img"></div>
+        <div><h4>Instagram</h4><p><a href="https://instagram.com/raysmarketing2010" target="_blank">Rays Marketing Network</a></p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><img src="images/youtube.png" alt="YouTube" class="social-icon-img"></div>
+        <div><h4>YouTube</h4><p><a href="https://youtube.com/@raysmarketingmkt?si=cNBJnv7mhmc769Z4" target="_blank">@raysmarketingmkt</a></p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><img src="images/facebook.png" alt="Facebook" class="social-icon-img"></div>
+        <div><h4>Facebook</h4><p><a href="https://facebook.com/raysmarketing" target="_blank">Rays Marketing Network</a></p></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="reg-panel">
+      <h3>Registration Details</h3>
+      <div class="reg-row"><span>NTN</span><span>4182785-6</span></div>
+      <div class="reg-row"><span>STRN</span><span>3277876113969</span></div>
+      <div class="reg-row"><span>BRA</span><span>4182785-6</span></div>
+      <div class="reg-row"><span>AG Vendor</span><span>30427281</span></div>
+      <div class="reg-row"><span>AGPR Vendor</span><span>30141496</span></div>
+      <div class="reg-row"><span>Established</span><span>2010</span></div>
+    </div>
+    <a href="https://wa.me/923003832165?text=Hello%20Rays%20Marketing%2C%20I%20would%20like%20a%20quote." target="_blank" class="btn-wa-w">
+      <svg viewBox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.773L0 32l8.473-2.004A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.293 22.293c-.344.967-2.003 1.872-2.746 1.993-.716.117-1.608.166-2.597-.163a23.85 23.85 0 01-2.354-.87C12.47 21.573 9.94 18.19 9.75 17.946c-.188-.244-1.53-2.032-1.53-3.877s.969-2.75 1.313-3.125c.344-.375.75-.469.999-.469.25 0 .5.002.72.014.23.012.54-.088.844.644.313.75 1.063 2.594 1.157 2.782.094.188.156.406.031.656-.125.25-.188.406-.375.625-.188.22-.395.49-.563.657-.188.188-.383.39-.165.766.22.375.975 1.605 2.094 2.6 1.438 1.28 2.65 1.676 3.025 1.864.375.188.594.156.813-.094.22-.25.937-1.094 1.188-1.469.25-.375.5-.313.844-.188.344.125 2.188 1.031 2.563 1.219.375.188.625.281.719.438.093.156.093.906-.25 1.873z"/></svg>
+      Request a Quote on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div>© 2025 <strong>Rays Marketing Network</strong> — We Believe in Quality Services · Est. 2010, Quetta, Pakistan</div>
+    <div class="footer-info">
+      <span>🕐 Office Timing: Mon–Sat, 9:00 AM – 6:00 PM</span>
+      <span>👔 Zaheer Business Consultant</span>
+      <span>📍 Office #11, 83700</span>
+    </div>
+  </div>
+  <div class="fdev">Design &amp; Develop By: <a href="https://addsmint.com" target="_blank">AddsMint.com</a></div>
+</footer>
+
+<!-- MUSIC TOGGLE -->
+<button id="music-btn" title="Pause Music" aria-label="Toggle Music">🔊</button>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/923003832165?text=Hello%20Rays%20Marketing%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="wa-float" aria-label="WhatsApp">
+  <div class="wa-tip">Chat with us!</div>
+  <svg viewBox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.773L0 32l8.473-2.004A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.293 22.293c-.344.967-2.003 1.872-2.746 1.993-.716.117-1.608.166-2.597-.163a23.85 23.85 0 01-2.354-.87C12.47 21.573 9.94 18.19 9.75 17.946c-.188-.244-1.53-2.032-1.53-3.877s.969-2.75 1.313-3.125c.344-.375.75-.469.999-.469.25 0 .5.002.72.014.23.012.54-.088.844.644.313.75 1.063 2.594 1.157 2.782.094.188.156.406.031.656-.125.25-.188.406-.375.625-.188.22-.395.49-.563.657-.188.188-.383.39-.165.766.22.375.975 1.605 2.094 2.6 1.438 1.28 2.65 1.676 3.025 1.864.375.188.594.156.813-.094.22-.25.937-1.094 1.188-1.469.25-.375.5-.313.844-.188.344.125 2.188 1.031 2.563 1.219.375.188.625.281.719.438.093.156.093.906-.25 1.873z"/></svg>
+</a>
+
+<!-- CERTIFICATE POPUP -->
+<div class="cert-popup" id="cert-popup" onclick="closeCertPopup()">
+  <div class="cert-popup-box" onclick="event.stopPropagation()">
+    <button class="cert-popup-close" onclick="closeCertPopup()">✕</button>
+    <img id="cert-popup-img" src="" alt="">
+  </div>
+</div>
+
+<script>
+  /* ── Mobile Nav ── */
+  function toggleNav() {
+    document.getElementById('ham').classList.toggle('open');
+    document.getElementById('mnu').classList.toggle('open');
+  }
+  function closeNav() {
+    document.getElementById('ham').classList.remove('open');
+    document.getElementById('mnu').classList.remove('open');
+  }
+
+  /* ── Particle Canvas ── */
+  const cvs = document.getElementById('hero-canvas');
+  const ctx2 = cvs.getContext('2d');
+  let pts = [];
+
+  function resizeCvs() {
+    cvs.width = cvs.offsetWidth;
+    cvs.height = cvs.offsetHeight;
+  }
+  resizeCvs();
+  window.addEventListener('resize', () => { resizeCvs(); makePts(); });
+
+  function makePts() {
+    pts = [];
+    const n = Math.floor((cvs.width * cvs.height) / 13000);
+    for (let i = 0; i < n; i++) {
+      pts.push({
+        x: Math.random() * cvs.width,
+        y: Math.random() * cvs.height,
+        r: Math.random() * 1.4 + 0.3,
+        vx: (Math.random() - .5) * 0.28,
+        vy: (Math.random() - .5) * 0.28,
+        a: Math.random() * 0.45 + 0.08,
+        c: Math.random() > .5 ? '247,148,29' : '255,214,0'
+      });
+    }
+  }
+  makePts();
+
+  function drawPts() {
+    ctx2.clearRect(0, 0, cvs.width, cvs.height);
+    pts.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = cvs.width;
+      if (p.x > cvs.width) p.x = 0;
+      if (p.y < 0) p.y = cvs.height;
+      if (p.y > cvs.height) p.y = 0;
+      ctx2.beginPath();
+      ctx2.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx2.fillStyle = `rgba(${p.c},${p.a})`;
+      ctx2.fill();
+    });
+    requestAnimationFrame(drawPts);
+  }
+  drawPts();
+
+  /* ── Counter Animation ── */
+  function runCounter(el) {
+    const t = parseInt(el.dataset.target);
+    let c = 0;
+    const step = Math.max(1, Math.ceil(t / 55));
+    const id = setInterval(() => {
+      c = Math.min(c + step, t);
+      el.textContent = c + '+';
+      if (c >= t) clearInterval(id);
+    }, 22);
+  }
+  setTimeout(() => document.querySelectorAll('.hstat-num[data-target]').forEach(runCounter), 950);
+
+  /* ── Scroll Reveal ── */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => obs.observe(el));
+
+  /* ── Product Catalogue ── */
+  const deals = [
+    { l: 'Fee Books', c: 'school' }, { l: 'Fee Cards', c: 'school' },
+    { l: 'Student Files', c: 'school' }, { l: 'Result Cards', c: 'school' },
+    { l: 'Merit Certificates', c: 'school' }, { l: 'Prospectus', c: 'school' },
+    { l: 'Student Attendance Register', c: 'school' }, { l: 'Teacher Attendance Register', c: 'school' },
+    { l: 'School Awards', c: 'school' }, { l: 'Students ID Cards', c: 'school' },
+    { l: 'Smart Boards', c: 'school' },
+    { l: 'Office Files', c: 'office' }, { l: 'Soft & White Boards', c: 'office' },
+    { l: 'Paper Photo Copies', c: 'office' }, { l: 'CCTV Cameras', c: 'office' },
+    { l: 'Stationary', c: 'office' }, { l: 'Toner & Cartridges', c: 'office' },
+    { l: 'Photocopier', c: 'office' }, { l: 'Cleaning Items', c: 'office' },
+    { l: 'Furniture Repairing', c: 'office' }, { l: 'Liveries / Uniforms', c: 'office' },
+    { l: 'Software', c: 'office' },
+    { l: 'Brochures', c: 'print' }, { l: 'Certificates', c: 'print' },
+    { l: 'Publicity Materials', c: 'print' }, { l: 'News Letter', c: 'print' },
+    { l: 'Panaflex Stemars', c: 'print' }, { l: 'Panaflex Standee', c: 'print' },
+    { l: 'Appreciation Certificates', c: 'print' }, { l: 'Promotion Videos', c: 'print' },
+    { l: 'Digital ID Cards', c: 'print' }, { l: 'Souvenir', c: 'print' },
+    { l: 'Banding / Branding', c: 'print' }, { l: 'Organization Profiles', c: 'print' },
+  ];
+
+  function filterDeals(cat, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = cat === 'all' ? deals : deals.filter(d => d.c === cat);
+    const g = document.getElementById('deals-grid');
+    g.style.opacity = 0;
+    setTimeout(() => {
+      g.innerHTML = f.map(d => `<div class="deal-item"><div class="deal-dot"></div>${d.l}</div>`).join('');
+      g.style.opacity = 1;
+    }, 180);
+  }
+  filterDeals('school', document.querySelector('.tab-btn.active'));
+
+  /* ── Clients ── */
+  const clientsData = [
+    { name: 'Balochistan Education Dept.', img: 'images/p1.png' },
+    { name: 'Quetta Grammar School',       img: 'images/p2.png' },
+    { name: 'AGPR Quetta Office',          img: 'images/p3.png' },
+    { name: 'Balochistan Revenue Auth.',   img: 'images/p4.png' },
+    { name: 'City Public School',          img: 'images/p5.png' },
+    { name: 'Pakistan Customs Quetta',     img: 'images/p6.png' },
+    { name: 'Sardar Bahadur Khan Univ.',   img: 'images/p7.png' },
+  ];
+
+  function buildClients() {
+    const track = document.getElementById('clients-track');
+    const doubled = [...clientsData, ...clientsData];
+    track.innerHTML = doubled.map(c => `
+      <div class="client-card client-card-img-only">
+        <img src="${c.img}" alt="${c.name}">
+      </div>
+    `).join('');
+  }
+  buildClients();
+
+  /* ── Certificates ── */
+  const certsData = [
+    { name: 'NTN Certificate',         img: 'images/fbr.png' },
+    { name: 'BRA Certificate',         img: 'images/cert3.png' },
+    { name: 'AG Vendor Certificate',   img: 'images/cert4.png' },
+    { name: 'AGPR Vendor Certificate', img: 'images/cert5.png' },
+    { name: 'Business Registration',   img: 'images/cert6.png' },
+  ];
+
+  function buildCerts() {
+    const track = document.getElementById('cert-track');
+    const doubled = [...certsData, ...certsData];
+    track.innerHTML = doubled.map(c => `
+      <div class="client-card client-card-img-only cert-card-click" onclick="openCertPopup('${c.img}','${c.name}')">
+        <img src="${c.img}" alt="${c.name}">
+      </div>
+    `).join('');
+  }
+  buildCerts();
+
+  function openCertPopup(src, name) {
+    document.getElementById('cert-popup-img').src = src;
+    document.getElementById('cert-popup-img').alt = name;
+    document.getElementById('cert-popup').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCertPopup() {
+    document.getElementById('cert-popup').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCertPopup(); });
+
+  /* ── Partners ── */
+  const partnersData = [
+    { name: 'HP',        img: 'images/par1.png' },
+    { name: 'Canon',     img: 'images/par2.png' },
+    { name: 'Epson',     img: 'images/par3.png' },
+    { name: 'Hikvision', img: 'images/par4.png' },
+    { name: 'Dahua',     img: 'images/par5.png' },
+    { name: 'Samsung',   img: 'images/par6.png' },
+    { name: 'Dell',      img: 'images/par7.png' },
+    { name: 'Sharp',     img: 'images/par8.png' },
+    { name: 'Brand 9',   img: 'images/par9.png' },
+    { name: 'Brand 10',  img: 'images/par10.png' },
+    { name: 'Brand 11',  img: 'images/par11.png' },
+    { name: 'Brand 12',  img: 'images/par12.png' },
+    { name: 'Brand 13',  img: 'images/par13.png' },
+    { name: 'Brand 14',  img: 'images/par14.png' },
+    { name: 'Brand 15',  img: 'images/par15.png' },
+    { name: 'Brand 16',  img: 'images/par16.png' },
+    { name: 'Brand 17',  img: 'images/par17.png' },
+    { name: 'Brand 18',  img: 'images/par18.png' },
+    { name: 'Brand 19',  img: 'images/par19.png' },
+  ];
+
+  function buildPartners() {
+    const track = document.getElementById('partners-track');
+    const doubled = [...partnersData, ...partnersData];
+    track.innerHTML = doubled.map(p => `
+      <div class="client-card client-card-img-only">
+        <img src="${p.img}" alt="${p.name}">
+      </div>
+    `).join('');
+  }
+  buildPartners();
+
+  /* ── Background Music ── */
+  const music = new Audio('cinematic.mp3');
+  music.loop = true;
+  music.volume = 0.3;
+
+  let musicStarted = false;
+  function startMusic() {
+    if (!musicStarted) {
+      music.play().catch(() => {});
+      musicStarted = true;
+    }
+  }
+  document.addEventListener('click', startMusic, { once: true });
+  document.addEventListener('touchstart', startMusic, { once: true });
+
+  const musicBtn = document.getElementById('music-btn');
+  musicBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    if (music.paused) {
+      music.play();
+      musicBtn.innerHTML = '🔊';
+      musicBtn.title = 'Pause Music';
+    } else {
+      music.pause();
+      musicBtn.innerHTML = '🔇';
+      musicBtn.title = 'Play Music';
+    }
+  });
+</script>
+
+</body>
+</html>
