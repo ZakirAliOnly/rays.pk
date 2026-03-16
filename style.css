@@ -226,22 +226,24 @@ nav {
 
 .hero-eyebrow { font-size:clamp(0.72rem,1.2vw,0.88rem); font-weight:600; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:0.5rem; opacity:0; animation:riseUp 0.7s 0.3s ease forwards; }
 
-/* Hero title — reduced margin so subtitle sits close */
+/* Hero title — reduced to subtitle size */
 .hero-title {
   font-family:'Acmossk','Poppins',serif;
-  font-size:clamp(3rem,7vw,6.2rem);
-  line-height:0.97; color:#fff; margin-bottom:0.6rem;
+  font-size:clamp(1rem,2vw,1.25rem);
+  line-height:1.2; color:#fff; margin-bottom:0.6rem;
   opacity:0; animation:riseUp 0.7s 0.4s ease forwards;
 }
 .hero-title .t-orange { color:var(--orange); display:block; }
 .hero-title .t-yellow { color:var(--yellow); display:block; }
 .hero-title .t-white  { color:#fff; display:block; }
 
-/* Hero subtitle & description */
+/* Hero subtitle — promoted to title size */
 .hero-subtitle {
-  font-size:clamp(1rem,2vw,1.25rem);
-  font-weight:700;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);
+  font-weight:800;
+  font-family:'Acmossk','Poppins',serif;
   color:var(--yellow);
+  line-height:1.1;
   letter-spacing:0.5px;
   margin-bottom:0.9rem;
   opacity:0;
@@ -1266,7 +1268,8 @@ footer strong { color:var(--yellow); font-weight:700; }
   .nav-brand-info { display:none; }
   section { padding:3.5rem 1.3rem; }
   .hero-content { padding:2rem 1.3rem; max-width:100%; }
-  .hero-title { font-size:clamp(2.8rem,13vw,4.2rem); }
+  .hero-title { font-size:clamp(0.82rem,3vw,1rem); }
+  .hero-subtitle { font-size:clamp(1.5rem,7vw,2.2rem); line-height:1.15; }
   .hero-btns { flex-direction:column; }
   .btn-main,.btn-green { width:100%; justify-content:center; }
   .hero-glow { width:300px; height:300px; right:-80px; }
