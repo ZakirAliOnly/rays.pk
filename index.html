@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rays Marketing Network – We Believe in Quality Services</title>
+  <link rel="icon" type="image/png" href="images/ray-logo.png">
+  <link rel="shortcut icon" type="image/png" href="images/ray-logo.png">
+  <link rel="apple-touch-icon" href="images/ray-logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,14 +18,35 @@
     <img src="images/ray-logo.png" alt="Rays" onerror="this.style.display='none'">
     <div class="nav-logo-text"></div>
   </a>
+  <div class="nav-brand-info">
+    <div class="nbi-name">Rays Marketing Network</div>
+    <div class="nbi-tagline">We Believe in Quality Services</div>
+    <div class="nbi-meta">
+      <span>🌐 <a href="https://rays.pk" target="_blank">Rays.pk</a></span>
+      <span class="nbi-divider">|</span>
+      <span>📲 <strong>#raysmkt</strong></span>
+    </div>
+  </div>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#deals">Products</a></li>
     <li><a href="#clients">Clients</a></li>
+    <li><a href="#whyus">Why Us</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#certificates">Certificates</a></li>
+    <li class="nav-dropdown" id="nav-dropdown-li">
+      <a href="#" class="nav-dropdown-toggle" onclick="toggleDropdown(event)">More ▾</a>
+      <ul class="nav-dropdown-menu" id="nav-dropdown-menu">
+        <li><a href="#profile" onclick="closeDropdown()">Profile</a></li>
+        <li><a href="#portfolio" onclick="closeDropdown()">Portfolio</a></li>
+        <li><a href="#blog" onclick="closeDropdown()">Blog</a></li>
+        <li><a href="#gallery" class="nav-coming-soon" onclick="closeDropdown()">📸 Pictures Gallery <span>Soon</span></a></li>
+        <li><a href="#orders" class="nav-coming-soon" onclick="closeDropdown()">🏆 Orders / Competitions <span>Soon</span></a></li>
+        <li><a href="#services" onclick="closeDropdown()">Service Categories</a></li>
+      </ul>
+    </li>
   </ul>
   <a href="https://wa.me/923003832165" target="_blank" class="nav-cta">💬 Get a Quote</a>
   <div class="hamburger" id="ham" onclick="toggleNav()">
@@ -35,7 +59,16 @@
   <a href="#services" onclick="closeNav()">Services</a>
   <a href="#deals" onclick="closeNav()">Products</a>
   <a href="#clients" onclick="closeNav()">Clients</a>
+  <a href="#whyus" onclick="closeNav()">Why Us</a>
   <a href="#contact" onclick="closeNav()">Contact</a>
+  <a href="#certificates" onclick="closeNav()">Certificates</a>
+  <div class="mob-divider">More Pages</div>
+  <a href="#profile" onclick="closeNav()">👤 Profile</a>
+  <a href="#portfolio" onclick="closeNav()">🗂️ Portfolio</a>
+  <a href="#blog" onclick="closeNav()">📝 Blog</a>
+  <a href="#gallery" onclick="closeNav()" class="mob-coming-soon">📸 Pictures Gallery <span>Soon</span></a>
+  <a href="#orders" onclick="closeNav()" class="mob-coming-soon">🏆 Orders / Competitions <span>Soon</span></a>
+  <a href="#services" onclick="closeNav()">🔖 Service Categories</a>
   <a href="https://wa.me/923003832165" target="_blank">💬 WhatsApp Us</a>
 </div>
 
@@ -62,10 +95,11 @@
     <div class="hero-badge"><span class="badge-dot"></span> Trusted Since 2010 – Quetta, Pakistan</div>
 
     <h1 class="hero-title">
-      <span class="t-orange">We Believe</span>
-      <span class="t-yellow">in Quality</span>
-      <span class="t-white">Services</span>
+      <span class="t-orange">Rays Marketing</span>
+      <span class="t-yellow">Network</span>
     </h1>
+    <p class="hero-subtitle">A Multi-Service Business Solutions Company</p>
+    <p class="hero-desc">Providing Complete Business Solutions, Consultancy &amp; Supply Services Since 2010. We help organizations grow through reliable services, professional consultancy, and customized business solutions designed to meet modern business needs.</p>
 
     <div class="float-pills-mobile">
       <div class="float-pill">🏛️ Government Contractor</div>
@@ -105,7 +139,6 @@
     <span class="marquee-item">Office Stationery</span>
     <span class="marquee-item">Panaflex Printing</span>
     <span class="marquee-item">ID Cards</span>
-    <!-- Duplicate for seamless loop -->
     <span class="marquee-item">Government Contractor</span>
     <span class="marquee-item">Digital Printing</span>
     <span class="marquee-item">School Supplies</span>
@@ -144,8 +177,48 @@
   </div>
 </section>
 
+<!-- CEO MESSAGE -->
+<section class="ceo-section" id="ceo">
+  <div class="ceo-inner">
+    <div class="ceo-left reveal-l">
+      <div class="ceo-img-wrap">
+        <div class="ceo-img-placeholder">
+          <img src="images/ceo image.jpeg" alt="Syed Zaheer Abbas – CEO Rays Marketing Network">
+        </div>
+        <div class="ceo-badge-tag">✦ CEO &amp; Founder</div>
+      </div>
+      <div class="ceo-identity">
+        <h3 class="ceo-name">Syed Zaheer Abbas</h3>
+        <p class="ceo-title-label">Chief Executive Officer</p>
+        <p class="ceo-company-label">Rays Marketing Network</p>
+        <div class="ceo-since"><span>Est. 2010</span><span>Quetta, Pakistan</span></div>
+      </div>
+    </div>
+    <div class="ceo-right reveal-r">
+      <div class="eyebrow">CEO's Message</div>
+      <h2 class="stitle">A Word from <span>Our Leadership</span></h2>
+      <div class="ceo-quote-mark">"</div>
+      <div class="ceo-body">
+        <p>At Rays Marketing Network, we take great pride in the journey we started in 2010. Over the years, we have grown into a trusted name by providing reliable and innovative solutions across different industries. A strong commitment to quality, customer satisfaction, and service excellence drives our progress.</p>
+        <p>Our mission is simple yet powerful — to deliver outstanding service and practical business solutions that support the growth of our clients. This is made possible by our dedicated and professional team, who continuously work to provide efficient, reliable, and result-oriented services.</p>
+        <p>In today's rapidly changing business environment, we remain guided by our core values of integrity, innovation, and collaboration. These principles help us improve our services and build strong and long-term relationships with our clients.</p>
+        <p>I would like to sincerely thank our valued clients, partners, and our hardworking team members for their trust and support. Together, we will continue to grow, achieve new milestones, and provide solutions that create lasting value.</p>
+      </div>
+      <div class="ceo-sign">
+        <div class="ceo-sign-line"></div>
+        <div class="ceo-sign-info">
+          <div>
+            <span class="ceo-sign-name">Syed Zaheer Abbas</span>
+            <span class="ceo-sign-role">CEO, Rays Marketing Network</span>
+          </div>
+          <span class="ceo-regards">Warm Regards</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- DIVIDER -->
-<div class="divider" style="background:#fff;">
   <svg viewBox="0 0 1440 55" preserveAspectRatio="none" height="55" xmlns="http://www.w3.org/2000/svg">
     <path d="M0,0 L1440,55 L1440,55 L0,55 Z" fill="#080300"/>
   </svg>
@@ -250,6 +323,229 @@
   </div>
 </section>
 
+<!-- WHAT WE DO / WHY CHOOSE US / FAST DELIVERY -->
+<section class="wwd-section" id="whyus">
+  <div class="wwd-header reveal">
+    <div class="eyebrow">Our Approach</div>
+    <h2 class="stitle">Solutions That <span>Make a Difference</span></h2>
+  </div>
+  <div class="wwd-grid">
+
+    <!-- Card 1: What We Do -->
+    <div class="wwd-card reveal" style="transition-delay:.0s">
+      <div class="wwd-card-icon">🎯</div>
+      <h3 class="wwd-card-title">What We Do</h3>
+      <p class="wwd-card-lead">At Rays Marketing Network, we provide customized solutions based on the needs of businesses, institutions, and organizations.</p>
+      <p class="wwd-card-sub">Whether you require printing services, business consultancy, marketing support, general supplies, or project assistance, our team ensures professional arrangements and timely delivery of the required services.</p>
+      <div class="wwd-card-tagline">We don't just sell products — we provide solutions.</div>
+    </div>
+
+    <!-- Card 2: Why Choose Us -->
+    <div class="wwd-card wwd-card-featured reveal" style="transition-delay:.12s">
+      <div class="wwd-card-icon">⭐</div>
+      <h3 class="wwd-card-title">Why Choose Us?</h3>
+      <ul class="wwd-list">
+        <li>
+          <span class="wwd-list-dot"></span>
+          <div><strong>Customer-Focused Approach</strong><span>Solutions designed according to your specific needs</span></div>
+        </li>
+        <li>
+          <span class="wwd-list-dot"></span>
+          <div><strong>Experience &amp; Trust</strong><span>Serving Quetta &amp; Balochistan for over 15 years</span></div>
+        </li>
+        <li>
+          <span class="wwd-list-dot"></span>
+          <div><strong>Multi-Service Expertise</strong><span>Printing, marketing support, supplies &amp; consultancy</span></div>
+        </li>
+        <li>
+          <span class="wwd-list-dot"></span>
+          <div><strong>Fast &amp; Efficient Delivery</strong><span>Professional and timely service</span></div>
+        </li>
+        <li>
+          <span class="wwd-list-dot"></span>
+          <div><strong>Dedicated Team</strong><span>Committed to client satisfaction and quality service</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Card 3: Fast Delivery -->
+    <div class="wwd-card reveal" style="transition-delay:.24s">
+      <div class="wwd-card-icon">🚀</div>
+      <h3 class="wwd-card-title">Fast Delivery</h3>
+      <p class="wwd-card-lead">Serving Quetta &amp; Balochistan with Speed and Reliability</p>
+      <p class="wwd-card-sub">At Rays Marketing Network, we provide quick and professional services for a wide range of business needs.</p>
+      <div class="wwd-commitment">
+        <p class="wwd-commitment-label">Our Commitment</p>
+        <ul class="wwd-list wwd-list-sm">
+          <li><span class="wwd-list-dot"></span><div><strong>Timely Solutions</strong><span>Fast response and reliable delivery</span></div></li>
+          <li><span class="wwd-list-dot"></span><div><strong>Wide Coverage</strong><span>Serving clients across Quetta and Balochistan</span></div></li>
+          <li><span class="wwd-list-dot"></span><div><strong>Multi-Service Support</strong><span>Printing, consultancy, supplies, and business solutions</span></div></li>
+        </ul>
+      </div>
+      <a href="https://wa.me/923003832165?text=Hello%20Rays%20Marketing%2C%20I%20would%20like%20to%20get%20started." target="_blank" class="wwd-cta-btn">Get Started Today →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CLIENT REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="reviews-header reveal">
+    <div class="eyebrow">Client Reviews</div>
+    <h2 class="stitle">What Our <span>Clients Say</span></h2>
+    <p class="ssub">Real feedback from the institutions and businesses we proudly serve across Quetta and Balochistan.</p>
+  </div>
+  <div class="reviews-grid">
+
+    <div class="review-card reveal" style="transition-delay:.0s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Rays Marketing Network has been our go-to supplier for school stationery and printing for years. Their quality is consistent and delivery is always on time. Highly recommended for any educational institution."</p>
+      <div class="review-footer">
+        <div class="review-avatar">QS</div>
+        <div class="review-info">
+          <span class="review-name">Quetta Grammar School</span>
+          <span class="review-role">Educational Institution</span>
+        </div>
+        <div class="review-badge">🏫 School</div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.1s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"We have been working with Rays Marketing for our office supplies and IT equipment. Their team is professional, responsive, and always delivers what they promise. A truly reliable vendor."</p>
+      <div class="review-footer">
+        <div class="review-avatar">AG</div>
+        <div class="review-info">
+          <span class="review-name">AGPR Quetta Office</span>
+          <span class="review-role">Government Department</span>
+        </div>
+        <div class="review-badge">🏛️ Govt.</div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.2s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Excellent branding and panaflex work. The team understood our requirements perfectly and delivered high-quality promotional materials within the deadline. Very satisfied with their service."</p>
+      <div class="review-footer">
+        <div class="review-avatar">BM</div>
+        <div class="review-info">
+          <span class="review-name">Business Client, Quetta</span>
+          <span class="review-role">Private Sector</span>
+        </div>
+        <div class="review-badge">📣 Branding</div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.3s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"From CCTV installation to smart boards, Rays provided everything we needed for our institution. Their after-sales support is commendable and the pricing is very competitive."</p>
+      <div class="review-footer">
+        <div class="review-avatar">CP</div>
+        <div class="review-info">
+          <span class="review-name">City Public School</span>
+          <span class="review-role">Educational Institution</span>
+        </div>
+        <div class="review-badge">💻 IT</div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.4s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"We ordered customized ID cards, result cards, and fee books in bulk. Everything was delivered on time with great print quality. Zaheer bhai and his team are always helpful and easy to work with."</p>
+      <div class="review-footer">
+        <div class="review-avatar">PS</div>
+        <div class="review-info">
+          <span class="review-name">Private School, Quetta</span>
+          <span class="review-role">Educational Institution</span>
+        </div>
+        <div class="review-badge">🖨️ Printing</div>
+      </div>
+    </div>
+
+    <div class="review-card reveal" style="transition-delay:.5s">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Rays Marketing handled our complete office setup including furniture, stationery, and photocopiers. A one-stop shop that saved us a lot of time and effort. Professional team with great work ethics."</p>
+      <div class="review-footer">
+        <div class="review-avatar">GO</div>
+        <div class="review-info">
+          <span class="review-name">Government Office, Balochistan</span>
+          <span class="review-role">Public Sector</span>
+        </div>
+        <div class="review-badge">🏛️ Govt.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="reviews-bottom reveal">
+    <div class="reviews-summary">
+      <span class="rs-stars">★★★★★</span>
+      <span class="rs-score">5.0</span>
+      <span class="rs-label">Average Rating from 100+ Clients</span>
+    </div>
+    <a href="https://wa.me/923003832165?text=Hello%20Rays%20Marketing%2C%20I%20would%20like%20to%20share%20my%20feedback." target="_blank" class="rs-cta">💬 Share Your Experience</a>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="eyebrow">Testimonials</div>
+    <h2 class="stitle">Trusted by <span>Real Businesses</span></h2>
+    <p class="ssub">Hear directly from our clients and partners about their experience working with Rays Marketing Network.</p>
+  </div>
+  <div class="testimonials-grid">
+
+    <!-- Testimonial 1 -->
+    <div class="testi-card reveal" style="transition-delay:.0s">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Working with Rays Marketing Network has greatly improved our school management operations. Their professional team understands the needs of educational institutions and provides reliable solutions. Their support and dedication helped us streamline our processes and improve efficiency.</p>
+      <div class="testi-divider"></div>
+      <div class="testi-footer">
+        <div class="testi-avatar">PG</div>
+        <div class="testi-info">
+          <span class="testi-name">Pakistan Grammar School</span>
+          <span class="testi-person">Hussain Ali Changezi — CEO</span>
+          <span class="testi-service">🏫 School Management</span>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testi-card testi-card-dark reveal" style="transition-delay:.12s">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Our partnership with Rays Marketing Network has been a great experience. Their professionalism, clear communication, and commitment to quality make every project successful. We are proud to work together as printing partners.</p>
+      <div class="testi-divider"></div>
+      <div class="testi-footer">
+        <div class="testi-avatar">KP</div>
+        <div class="testi-info">
+          <span class="testi-name">Kashif Printing Press</span>
+          <span class="testi-person">Kashif Ali — CEO</span>
+          <span class="testi-service">🖨️ Printing Partner</span>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testi-card reveal" style="transition-delay:.24s">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">We received excellent printing services from Rays Marketing Network. The quality of the work, timely delivery, and professional attitude impressed us. They understand client requirements and deliver outstanding results.</p>
+      <div class="testi-divider"></div>
+      <div class="testi-footer">
+        <div class="testi-avatar">CS</div>
+        <div class="testi-info">
+          <span class="testi-name">Chisty Son Tailor</span>
+          <span class="testi-person">Maqsood Ahmed — M.D</span>
+          <span class="testi-service">🖨️ Printing Work</span>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div>
@@ -258,20 +554,16 @@
     <p class="ssub">Whether a single product or full institutional supply — we're just a message away.</p>
     <div class="cinfo">
       <div class="cinfo-row">
-        <div class="cinfo-icon">📍</div>
-        <div><h4>Office Address</h4><p>11 Ground Floor, Lala Jee Business Center,<br>Archer Road, Quetta</p></div>
-      </div>
-      <div class="cinfo-row">
         <div class="cinfo-icon">📞</div>
         <div><h4>Phone / WhatsApp</h4><p><a href="https://wa.me/923003832165">+92 300 3832165 (Zaheer)</a></p></div>
       </div>
       <div class="cinfo-row">
         <div class="cinfo-icon"><img src="images/gmail.png" alt="Gmail" class="social-icon-img"></div>
-        <div><h4>Email</h4><p><a href="mailto:info@rays.pk">info@rays.pk</a></p></div>
+        <div><h4>Email</h4><p><a href="/cdn-cgi/l/email-protection#442d2a222b0436253d376a342f"><span class="__cf_email__" data-cfemail="127b7c747d5260736b613c6279">info@rays.pk</span></a></p></div>
       </div>
       <div class="cinfo-row">
         <div class="cinfo-icon"><img src="images/instagram.png" alt="Instagram" class="social-icon-img"></div>
-        <div><h4>Instagram</h4><p><a href="https://instagram.com/raysmarketing2010" target="_blank">Rays Marketing Network</a></p></div>
+        <div><h4>Instagram</h4><p><a href="https://www.instagram.com/raysmkt" target="_blank">Rays Marketing Network</a></p></div>
       </div>
       <div class="cinfo-row">
         <div class="cinfo-icon"><img src="images/youtube.png" alt="YouTube" class="social-icon-img"></div>
@@ -279,7 +571,46 @@
       </div>
       <div class="cinfo-row">
         <div class="cinfo-icon"><img src="images/facebook.png" alt="Facebook" class="social-icon-img"></div>
-        <div><h4>Facebook</h4><p><a href="https://facebook.com/raysmarketing" target="_blank">Rays Marketing Network</a></p></div>
+        <div><h4>Facebook</h4><p><a href="https://web.facebook.com/raysmarketingnetwork" target="_blank">Rays Marketing Network</a></p></div>
+      </div>
+      <div class="cinfo-divider"></div>
+      <div class="cinfo-bottom-row">
+        <div class="cinfo-bottom-left">
+          <div class="cinfo-row">
+            <div class="cinfo-icon">🕐</div>
+            <div><h4>Office Timing</h4><p>Mon–Sat, 9:00 AM – 6:00 PM</p></div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">👔</div>
+            <div><h4>Business Consultant</h4><p>Zaheer Business Consultant</p></div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">📍</div>
+            <div><h4>Postal Code</h4><p>Office #11, 83700</p></div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon">🗺️</div>
+            <div>
+              <h4>Find Us on Map</h4>
+              <a href="https://maps.app.goo.gl/LnGgRK3DHzUCo4ML6" target="_blank" class="cinfo-map-link">Open in Google Maps ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="cinfo-bottom-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.5!2d67.0157805!3d30.1916077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ed2de3c7835e435%3A0xe1c41c63af462df!2sRAYS%20MARKETING%20NETWORK%20QUETTA!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk"
+            width="100%"
+            height="220"
+            style="border:0; border-radius:14px; display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Rays Marketing Network Location">
+          </iframe>
+          <a href="https://maps.app.goo.gl/LnGgRK3DHzUCo4ML6" target="_blank" class="cinfo-map-btn">
+            📍 Get Directions
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -304,11 +635,6 @@
 <footer>
   <div class="footer-main">
     <div>© 2025 <strong>Rays Marketing Network</strong> — We Believe in Quality Services · Est. 2010, Quetta, Pakistan</div>
-    <div class="footer-info">
-      <span>🕐 Office Timing: Mon–Sat, 9:00 AM – 6:00 PM</span>
-      <span>👔 Zaheer Business Consultant</span>
-      <span>📍 Office #11, 83700</span>
-    </div>
   </div>
   <div class="fdev">Design &amp; Develop By: <a href="https://addsmint.com" target="_blank">AddsMint.com</a></div>
 </footer>
@@ -330,7 +656,31 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  /* ── Nav Dropdown ── */
+  function toggleDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const menu = document.getElementById('nav-dropdown-menu');
+    const toggle = document.querySelector('.nav-dropdown-toggle');
+    const isOpen = menu.classList.contains('open');
+    menu.classList.toggle('open');
+    toggle.classList.toggle('active');
+    toggle.innerHTML = isOpen ? 'More ▾' : 'More ▴';
+  }
+  function closeDropdown() {
+    const menu = document.getElementById('nav-dropdown-menu');
+    const toggle = document.querySelector('.nav-dropdown-toggle');
+    menu.classList.remove('open');
+    toggle.classList.remove('active');
+    toggle.innerHTML = 'More ▾';
+  }
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    const dd = document.getElementById('nav-dropdown-li');
+    if (dd && !dd.contains(e.target)) closeDropdown();
+  });
+
   /* ── Mobile Nav ── */
   function toggleNav() {
     document.getElementById('ham').classList.toggle('open');
@@ -528,35 +878,46 @@
     `).join('');
   }
   buildPartners();
+/* ── Background Music ── */
+const music = new Audio('cinematic.mp3');
+music.loop = true;
+music.volume = 0.3;
 
-  /* ── Background Music ── */
-  const music = new Audio('cinematic.mp3');
-  music.loop = true;
-  music.volume = 0.3;
+let musicStarted = false;
+let musicEnabled = true; // controls if music should play
 
-  let musicStarted = false;
-  function startMusic() {
-    if (!musicStarted) {
-      music.play().catch(() => {});
-      musicStarted = true;
-    }
+function startMusic() {
+  if (!musicStarted && musicEnabled) {
+    music.play().catch(() => {});
+    musicStarted = true;
   }
-  document.addEventListener('click', startMusic, { once: true });
-  document.addEventListener('touchstart', startMusic, { once: true });
+}
 
-  const musicBtn = document.getElementById('music-btn');
-  musicBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    if (music.paused) {
-      music.play();
-      musicBtn.innerHTML = '🔊';
-      musicBtn.title = 'Pause Music';
-    } else {
-      music.pause();
-      musicBtn.innerHTML = '🔇';
-      musicBtn.title = 'Play Music';
-    }
-  });
+// autoplay attempt
+music.play().catch(()=>{});
+
+// listen for first interaction
+['click','touchstart','keydown','scroll','mousemove'].forEach(evt => {
+  document.addEventListener(evt, startMusic, { once: true, passive: true });
+});
+
+const musicBtn = document.getElementById('music-btn');
+
+musicBtn.addEventListener('click', function(e) {
+  e.stopPropagation();
+
+  if (music.paused) {
+    musicEnabled = true;
+    music.play();
+    musicBtn.innerHTML = '🔊';
+    musicBtn.title = 'Pause Music';
+  } else {
+    musicEnabled = false; // stop autoplay trigger
+    music.pause();
+    musicBtn.innerHTML = '🔇';
+    musicBtn.title = 'Play Music';
+  }
+});
 </script>
 
 </body>
