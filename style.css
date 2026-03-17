@@ -177,7 +177,7 @@ nav {
 /* HERO */
 .hero {
   min-height:100vh; position:relative; overflow:hidden;
-  display:flex; align-items:center; padding-top:68px;
+  display:flex; align-items:center; padding-top:120px;
   background:radial-gradient(ellipse 90% 70% at 75% 50%, #3d1800 0%, #1c0900 45%, #080300 100%);
 }
 #hero-canvas { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:0; }
@@ -220,6 +220,10 @@ nav {
   font-size:0.73rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
   margin-bottom:1.6rem; opacity:0; animation:riseUp 0.7s 0.2s ease forwards;
   margin-top: 40px;
+}
+.hero-badge{
+  white-space: nowrap;
+  font-size: clamp(0.65rem, 2vw, 0.85rem);
 }
 .badge-dot { width:7px; height:7px; background:var(--orange); border-radius:50%; animation:blink 1.5s infinite; }
 @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.2;} }
@@ -1256,6 +1260,62 @@ footer strong { color:var(--yellow); font-weight:700; }
 .divider { width:100%; overflow:hidden; line-height:0; }
 .divider svg { display:block; }
 
+.about-vis-inner img{
+  animation: logoAura 2s ease-in-out infinite;
+  transform-origin:center;
+}
+
+/* Glow + size animation */
+
+@keyframes logoAura{
+
+  0%{
+    transform: translateY(0px) scale(1);
+    filter: drop-shadow(0 0 6px rgba(255, 225, 120, 0.6))
+            drop-shadow(0 0 12px rgba(255, 210, 80, 0.5));
+  }
+
+  50%{
+    transform: translateY(-12px) scale(1.08);
+    filter: drop-shadow(0 0 14px rgba(255, 230, 120, 0.9))
+            drop-shadow(0 0 28px rgba(255, 200, 60, 0.8));
+  }
+
+  100%{
+    transform: translateY(0px) scale(1);
+    filter: drop-shadow(0 0 6px rgba(255, 225, 120, 0.6))
+            drop-shadow(0 0 12px rgba(255, 210, 80, 0.5));
+  }
+
+}
+.about-vis-inner img:hover{
+  transform: scale(1.12) rotate(3deg);
+  transition: all 0.4s ease;
+}
+
+.hero-desc{
+  opacity:0;
+  transform:translateX(-60px);
+  animation: slideFromLeft 1.2s ease forwards;
+  animation-delay:0.5s;
+}
+
+@keyframes slideFromLeft{
+
+  0%{
+    opacity:0;
+    transform:translateX(-60px);
+  }
+
+  100%{
+    opacity:1;
+    transform:translateX(0);
+  }
+
+}
+
+
+
 /* RESPONSIVE */
 @media(max-width:1024px){
   .float-pills { display:none; }
@@ -1265,7 +1325,27 @@ footer strong { color:var(--yellow); font-weight:700; }
   nav { padding:0 1.2rem; }
   .nav-links,.nav-cta { display:none; }
   .hamburger { display:flex; }
-  .nav-brand-info { display:none; }
+  .nav-brand-info{
+    display:flex;
+    flex-direction:column;
+    border:none;
+    margin-left:0;
+    padding-left:0;
+  }
+
+  .nbi-name{
+    font-size:0.65rem;
+  }
+
+  .nbi-tagline{
+    font-size:0.55rem;
+  }
+
+  .nbi-meta{
+    font-size:0.55rem;
+    flex-wrap:wrap;
+  }
+  
   section { padding:3.5rem 1.3rem; }
   .hero-content { padding:2rem 1.3rem; max-width:100%; }
   .hero-title { font-size:clamp(0.82rem,3vw,1rem); }
